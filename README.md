@@ -82,6 +82,48 @@ View the history of commits in the repository:
 git log
 ```
 
+### 🔟 Manage Branches
+#### Create and Switch to a New Branch
+Create a new branch and switch to it:
+```bash
+# Create and switch to a new branch
+git checkout -b feature/profile
+
+# Example output
+Switched to a new branch 'feature/profile'
+```
+
+#### View All Branches
+Check the current branch and list all branches:
+```bash
+# View branches
+git branch
+
+# Example output
+* feature/profile
+  master
+```
+
+#### Switch Between Branches
+Switch back to the `master` branch:
+```bash
+# Switch to master branch
+git checkout master
+
+# Example output
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+```
+
+Switch to the `feature/profile` branch:
+```bash
+# Switch back to feature/profile branch
+git checkout feature/profile
+
+# Example output
+Switched to branch 'feature/profile'
+```
+
 ---
 
 ## 📚 Command Reference
@@ -98,12 +140,16 @@ git log
 | `git push origin main`       | Push changes to the main branch              |
 | `git clean -f`               | Remove untracked files from the directory    |
 | `git log`                    | Show the commit history                      |
+| `git checkout -b <branch>`   | Create and switch to a new branch            |
+| `git branch`                 | View all branches                            |
+| `git checkout <branch>`      | Switch to an existing branch                 |
 
 ---
 
 ## 📝 Notes
 - Always use descriptive commit messages.
-- Ensure you pull updates before making changes to avoid conflicts.
+- Pull updates frequently to avoid conflicts.
+- Use branching to manage features and keep the `master` branch clean.
 - This repository will grow as more commands and concepts are learned in the course.
 
 Happy coding! 😄
