@@ -65,6 +65,23 @@ Upload your changes to the remote repository:
 git push origin main
 ```
 
+### 8️⃣ Clean Up Untracked Files
+Remove untracked files from the working directory:
+```bash
+# Remove untracked files
+git clean -f
+
+# Example output
+Removing seeTest.txt.txt
+```
+
+### 9️⃣ View Commit History
+View the history of commits in the repository:
+```bash
+# Show commit log
+git log
+```
+
 ---
 
 ## 📚 Command Reference
@@ -79,6 +96,8 @@ git push origin main
 | `git commit -m "message"`    | Commit changes with a message                |
 | `git pull origin main`       | Pull the latest changes from the main branch |
 | `git push origin main`       | Push changes to the main branch              |
+| `git clean -f`               | Remove untracked files from the directory    |
+| `git log`                    | Show the commit history                      |
 
 ---
 
