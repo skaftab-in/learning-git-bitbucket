@@ -124,6 +124,25 @@ git checkout feature/profile
 Switched to branch 'feature/profile'
 ```
 
+### 11. Manage Changes with Git Reset
+```bash
+# Reset the repository to the last commit (without changing the working directory)
+git reset
+
+# Soft reset to the previous commit, keeping changes staged
+git reset --soft HEAD~1
+
+# Hard reset to a specific commit and discard all changes
+
+git reset --hard HEAD~1
+git reset --hard 92ce7c365477d7faeb726fdd73846c09d7197cf
+
+# Shows a log of all actions performed on the repository.
+
+git reflog
+
+```
+
 ---
 
 ## 📚 Command Reference
